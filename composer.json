@@ -1,0 +1,36 @@
+{
+    "name": "modulity/http-codes",
+    "description": "Http standard status codes localization",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Henry Franklin",
+            "email": "henrymais@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modulity\\HttpCodes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modulity\\HttpCodes\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs --standard=PSR12 --extensions=php ./src"
+    },
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpunit/phpunit": "^9.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
